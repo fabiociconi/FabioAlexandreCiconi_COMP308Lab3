@@ -1,0 +1,8 @@
+<div class="course-list">
+	<a routerLink="/course/new">Add new</a>
+	<ul>
+		<li *ngFor="let item of list">
+			<a [routerLink]="['/course', item._id]">{{ item.courseCode }} {{ item.courseName }}</a>
+		</li>
+	</ul>
+</div>

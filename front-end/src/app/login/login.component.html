@@ -1,0 +1,17 @@
+<div class="login">
+	<form *ngIf="ready" [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)" layout="column" content="center" flex>
+		<div layout="column" class="form-fields">
+			<mat-form-field>
+				<input matInput formControlName="userName" placeholder="User Name">
+			</mat-form-field>
+			<mat-form-field>
+				<input matInput type="password" formControlName="password" placeholder="Password">
+			</mat-form-field>
+		</div>
+
+		<div>
+			<button mat-raised-button type="submit" [disabled]="!loginForm.valid">Login</button>
+		</div>
+
+	</form>
+</div>

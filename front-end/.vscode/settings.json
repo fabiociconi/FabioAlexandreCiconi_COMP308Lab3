@@ -1,0 +1,23 @@
+{
+    "files.exclude": {
+        "**/.editorconfig": true,
+        "dist": true,
+        "**/tsconfig*.json": false,
+        "**/.git*": true,
+        "**/.svn": true,
+		"**/.hg": true,
+		"**/etc/": true,
+        "**/node_modules/": true,
+        "**/tslint.json": true,
+		"**/package-lock.json": true,
+		"**/nodemon.json": true,
+		"**/proxy.config.json": true,
+		"**/.angular-cli.json": false,
+		"README.md": true
+	},
+	"sfmt.insize": 4,
+    "editor.autoIndent": true,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,    
+    "typescript.tsdk": "./node_modules/typescript/lib",
+}

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "back-end"
+		},
+		{
+			"path": "front-end"
+		},
+		{
+			"path": "entity"
+		}
+	],
+	"settings": {}
+}

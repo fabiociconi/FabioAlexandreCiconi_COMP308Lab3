@@ -1,0 +1,14 @@
+.app-component {
+	.header {
+		height: 50px;
+		line-height: 50px;
+		width: 100%;
+		background-color: #f2c133;
+		padding-left: 10px;
+
+		a {
+			width: 75px;
+			display: inline-block;
+		}
+	}
+}

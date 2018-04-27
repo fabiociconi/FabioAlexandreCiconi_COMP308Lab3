@@ -1,0 +1,38 @@
+<div class="course-edit">
+	<form *ngIf="ready" [formGroup]="courseForm" (ngSubmit)="save(courseForm.value)" layout="column" flex>
+		<div layout="row" class="form-fields">
+			<div layout="column" flex>
+				<mat-form-field>
+					<input matInput formControlName="courseCode" placeholder="Course Code">
+				</mat-form-field>
+				<mat-form-field>
+					<input matInput formControlName="courseName" placeholder="Course Name">
+				</mat-form-field>
+				<mat-form-field>
+					<input matInput formControlName="section" placeholder="Section">
+				</mat-form-field>
+				<mat-form-field>
+					<input matInput formControlName="semester" placeholder="Semester">
+				</mat-form-field>
+			</div>
+
+			<div class="student-list" layout="column" flex>
+
+				<h1>Students</h1>
+
+				<ul>
+					<li *ngFor="let item of students">
+						{{item.firstName}} {{item.lastName}}
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<button mat-raised-button color="warn" type="button" [disabled]="id === 'new'" (click)="delete()">Delete</button>
+			<button mat-raised-button color="accent" type="button" routerLink="/course">Cancel</button>
+			<button mat-raised-button type="submit" [disabled]="!courseForm.valid">Save</button>
+		</div>
+
+	</form>
+</div>

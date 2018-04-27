@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    padding: 10px;
+}
+
+form div {
+    min-height: 45px;
+}
+
+form div label {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+form div input {
+    padding-left: 10px;
+    outline: none;
+    width: 350px;
+    height: 35px;
+}
+
+form div textarea {
+    padding: 10px;
+    outline: none;
+    width: 342px;
+    resize: none;
+}
+
+form div button {
+    margin-left: 378px;
+    height: 35px;
+    width: 90px;
+    border: 1px solid #5147e9;
+    background-color: #7a71f0;
+    color: #fff;
+}
+
+.error {
+    color: rgb(192, 22, 16);
+    font-weight: bold;
+}

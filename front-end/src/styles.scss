@@ -1,0 +1,26 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~xcommon/styles/layout.scss";
+@import "~xcommon/styles/functions.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@include xcommon-reset();
+@include xcommon-layout-full();
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
